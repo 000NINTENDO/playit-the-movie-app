@@ -1,0 +1,34 @@
+@font-face {
+	font-family: racing-sans-one;
+	src: url(./racing-sans-one/RacingSansOne-Regular.ttf);
+}
+
+@font-face {
+	font-family: montserrat-medium;
+	src: url(./montserrat/Montserrat-Medium.ttf);
+}
+
+@font-face {
+	font-family: montserrat-regular;
+	src: url(./montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+	font-family: montserrat-bold;
+	src: url(./montserrat/Montserrat-Bold.ttf);
+}
+
+@font-face {
+	font-family: montserrat-semibold;
+	src: url(./montserrat/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+	font-family: montserrat-light;
+	src: url(./montserrat/Montserrat-Light.ttf);
+}
+
+@font-face {
+	font-family: poppins-medium;
+	src: url(./poppins/Poppins-Medium.ttf);
+}

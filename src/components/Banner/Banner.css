@@ -1,0 +1,59 @@
+.banner_container {
+	width: 100%;
+	max-width: 1440px;
+	height: 770px;
+	position: relative;
+	background-color: #fda2a2;
+	z-index: -1;
+}
+
+.banner_image {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+
+.banner_image_img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+
+.banner_shadow_layer_1 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	background-image: linear-gradient(
+		85.8deg,
+		rgba(0, 0, 0, 0.82) 34.41%,
+		rgba(0, 0, 0, 0) 62.49%
+	);
+}
+
+.banner_shadow_layer_2 {
+	width: 45.5%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: linear-gradient(
+		70.41deg,
+		rgba(0, 0, 0, 0) 54.41%,
+		rgba(0, 0, 0, 0.82) 99.25%
+	);
+}
+
+.banner_bottom_layer_ellipse {
+	width: 100%;
+	margin-top: -50px;
+	z-index: 999;
+}

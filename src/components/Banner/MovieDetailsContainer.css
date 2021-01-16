@@ -1,0 +1,104 @@
+@import "../../fonts/fonts.css";
+
+.banner_movie_details_container {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	color: #ffffff;
+	position: absolute;
+	top: 240px;
+	left: 208px;
+	/* transform: translate(130px, -500px); */
+	z-index: 1;
+}
+
+.movie_details__movie_link {
+	text-decoration: none;
+	color: white;
+}
+
+.movie_details__movie_title {
+	width: 80%;
+	letter-spacing: 0.05em;
+	line-height: 1.5;
+	font-family: montserrat-semibold;
+	text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.movie_details__duration_year {
+	display: flex;
+	align-items: center;
+	margin-top: 21px;
+	font-family: montserrat-regular;
+	letter-spacing: 0.1em;
+	font-size: 14px;
+}
+
+.movie_details__seperator {
+	width: 1px;
+	height: 12px;
+	background-color: white;
+	margin-left: 9px;
+	margin-right: 9px;
+}
+
+.movie_details__overview_container {
+	margin-top: 37px;
+}
+
+.overview__title {
+	font-family: montserrat-semibold;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.overview__content {
+	width: 60%;
+	font-family: montserrat-light;
+	font-size: 14px;
+	line-height: 1.6;
+	margin-top: 12px;
+	color: #cecece;
+}
+
+.movie_details__trailer_link__link {
+	text-decoration: none;
+	color: white;
+}
+
+.movie_details__trailer_link {
+	width: 135px;
+	height: 43px;
+	margin-top: 30px;
+	position: relative;
+	background-color: #00000099;
+	border-radius: 45px;
+	overflow: hidden;
+}
+
+.movie_details__trailer_link__button_ripple {
+	width: 135px;
+	height: 43px;
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	border-radius: 45px;
+	background: transparent;
+	outline: none;
+	border: none;
+}
+
+.movie_details__trailer_play_icon {
+	margin-left: -10px;
+	margin-top: -3px;
+}
+
+.movie_details__trailer_text {
+	margin-left: 12px;
+	font-family: poppins-medium;
+	font-weight: 500;
+	letter-spacing: 0.05em;
+}
