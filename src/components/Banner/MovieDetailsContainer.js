@@ -1,36 +1,79 @@
-import React from "react";
+import React, { useState, useEffect, useReducer, useContext } from "react";
 import MovieRatingIndicator from "./MovieRatingIndicators";
 import ButtonBase from "@material-ui/core/ButtonBase";
-import { Link } from "react-router-dom";
+import { MovieTrailerContext } from "../../context/MovieTrailerContext";
+import { Link, useHistory } from "react-router-dom";
 import "./MovieDetailsContainer.css";
+import TrailerPlayer from "../TrailerPlayer/TrailerPlayer";
 
-const MovieDetailsContainer = () => {
+const MovieDetailsContainer = ({ randomMovie }) => {
+	const {
+		title,
+		overview,
+		videos,
+		id,
+		vote_average,
+		runtime,
+		release_date,
+	} = randomMovie;
+	// const { setMovieTrailer } = useContext(MovieTrailerContext);
+
+	// const [trailerLink, setTrailerLink] = useState("");
+	const history = useHistory();
+	const trailerLink = `/#play?${id}`;
+	console.log("history object", history);
+	console.log("im added");
+
+	// console.log("movie details container im rendered");
+
+	const hours_mins = (totalMinutes) => {
+		let hours = parseInt(totalMinutes / 60);
+		let min = hours * 60;
+		let minutes = totalMinutes - min;
+		return { hours, minutes };
+	};
+	const hoursMinutes = hours_mins(runtime);
+	const releadeDate = new Date(release_date);
+	const releaseYear = releadeDate.getFullYear();
+
+	useEffect(() => {
+		// trailerLinkValidation(videos);
+	}, [randomMovie]);
+
+	console.log("trailer link", trailerLink);
 	return (
 		<>
 			<div className="banner_movie_details_container">
 				<Link to="" className="movie_details__movie_link">
-					<h1 className="movie_details__movie_title">X MEN: The Appocalips</h1>
+					{/* <h1 className="movie_details__movie_title">X MEN: The Appocalips</h1> */}
+					<h1 className="movie_details__movie_title">{title}</h1>
 				</Link>
-				<MovieRatingIndicator />
+				<MovieRatingIndicator rating={vote_average} />
 				<div className="movie_details__duration_year">
 					<div className="movie_details__duration">
-						<p>2h 10m</p>
+						<p>
+							{hoursMinutes.hours}h {hoursMinutes.minutes}m
+						</p>
 					</div>
 					<div className="movie_details__seperator"></div>
 					<div className="movie_details__year">
-						<p>2013</p>
+						<p>{releaseYear}</p>
 					</div>
 				</div>
 				<div className="movie_details__overview_container">
 					<h3 className="overview__title">Overview</h3>
-					<p className="overview__content">
+					<p className="overview__content">{overview}</p>
+					{/* <p className="overview__content">
 						When Tony Stark's world is torn apart by a formidable terrorist
 						called the Mandarin, he starts an odyssey of rebuilding and
 						retribution.
-					</p>
+					</p> */}
 				</div>
 				<div className="movie_details__trailer_link">
-					<Link to="" className="movie_details__trailer_link__link">
+					{/* onClick={() => {
+						setMovieTrailer({ type: "playTrailer", payload: randomMovie });
+					}} */}
+					<Link to={trailerLink} className="movie_details__trailer_link__link">
 						<ButtonBase className="movie_details__trailer_link__button_ripple">
 							<svg
 								className="movie_details__trailer_play_icon"

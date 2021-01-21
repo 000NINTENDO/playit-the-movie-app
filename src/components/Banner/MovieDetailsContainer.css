@@ -53,7 +53,12 @@
 }
 
 .overview__content {
-	width: 60%;
+	max-width: 60%;
+	max-height: 110px;
+	overflow: hidden;
+	/* white-space: ; */
+	text-overflow: ellipsis;
+	word-wrap: normal;
 	font-family: montserrat-light;
 	font-size: 14px;
 	line-height: 1.6;

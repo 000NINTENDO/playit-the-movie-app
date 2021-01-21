@@ -8,10 +8,10 @@ const SearchInput = () => {
 	const inputContainer = useRef();
 
 	useEffect(() => {
-		console.log(placeHolder);
-		console.log(searchInput.current.value);
-		console.log(inputContainer);
-		console.log(placeHolder_1);
+		// console.log(placeHolder);
+		// console.log(searchInput.current.value);
+		// console.log(inputContainer);
+		// console.log(placeHolder_1);
 		let spaceHolder_visibility_timeLag;
 		const animateSpaceHolder = () => {
 			placeHolder_1.current.classList.add(

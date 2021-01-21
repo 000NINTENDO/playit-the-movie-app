@@ -19,7 +19,7 @@ const ProgressCircle = ({ currentProgress, maxValue, currentValue }) => {
 	const showProgress = (maxValue, currentValue, circumeferrence) => {
 		const progress =
 			circumeferrence - (circumeferrence * currentValue) / maxValue;
-		console.log("progress: ", progress);
+		// console.log("progress: ", progress);
 		progressCircle.current.style.strokeDashoffset = progress;
 	};
 

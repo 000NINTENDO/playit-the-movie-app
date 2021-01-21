@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext, useReducer } from "react";
 import { Link } from "react-router-dom";
+import { TrailerPlayerContext, reducer } from "../TrailerPlayerPopUpContext";
 import SearchInput from "./SearchInput";
 import "./Header.css";
 
