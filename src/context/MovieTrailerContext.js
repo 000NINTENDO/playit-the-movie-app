@@ -11,8 +11,15 @@ const movieTrailerReducer = (state, action) => {
 	switch (action.type) {
 		case "playTrailer":
 			return {
+				...state,
 				isOpen: true,
 				movie: action.payload,
+			};
+		case "closePlayer":
+			return {
+				...state,
+				isOpen: false,
+				movie: "",
 			};
 		default:
 			return state;

@@ -32,9 +32,6 @@ const Banner = () => {
 		}
 	};
 
-	const randomPageNumber = randomPagePicker(5);
-	console.log("randomPageNumber", randomPageNumber);
-
 	const randomMoviePicker = () => {
 		let randomIndex;
 		for (randomIndex = 0; ; randomIndex++) {
@@ -59,6 +56,9 @@ const Banner = () => {
 	console.log("isLoading", isLoading);
 
 	useEffect(() => {
+		const randomPageNumber = randomPagePicker(5);
+		console.log("randomPageNumber", randomPageNumber);
+
 		const fetchTopTatedMovies = async () => {
 			const topRatedMoviesRequest = await fetch(
 				`https://api.themoviedb.org/3/movie/popular?api_key=1cccfd6a1490af361de2b3d2efe39861&language=en-US&page=${randomPageNumber}`
@@ -102,7 +102,7 @@ const Banner = () => {
 			const randomMovieId = randomMoviePicker();
 			setRandomMovieId(randomMovieId);
 			console.log("random Movie Id", randomMovieId);
-			setIsMovieIdReceived(true);
+			// setIsMovieIdReceived(true);
 			console.log("im executed");
 		}
 

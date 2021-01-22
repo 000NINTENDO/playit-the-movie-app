@@ -1,7 +1,11 @@
 import React, { useState, useEffect, useReducer, useContext } from "react";
 import MovieRatingIndicator from "./MovieRatingIndicators";
 import ButtonBase from "@material-ui/core/ButtonBase";
-import { MovieTrailerContext } from "../../context/MovieTrailerContext";
+import {
+	MovieTrailerContext,
+	movie_trailer,
+	movieTrailerReducer,
+} from "../../context/MovieTrailerContext";
 import { Link, useHistory } from "react-router-dom";
 import "./MovieDetailsContainer.css";
 import TrailerPlayer from "../TrailerPlayer/TrailerPlayer";
@@ -16,7 +20,7 @@ const MovieDetailsContainer = ({ randomMovie }) => {
 		runtime,
 		release_date,
 	} = randomMovie;
-	// const { setMovieTrailer } = useContext(MovieTrailerContext);
+	const { setMovieTrailer } = useContext(MovieTrailerContext);
 
 	// const [trailerLink, setTrailerLink] = useState("");
 	const history = useHistory();
@@ -35,10 +39,6 @@ const MovieDetailsContainer = ({ randomMovie }) => {
 	const hoursMinutes = hours_mins(runtime);
 	const releadeDate = new Date(release_date);
 	const releaseYear = releadeDate.getFullYear();
-
-	useEffect(() => {
-		// trailerLinkValidation(videos);
-	}, [randomMovie]);
 
 	console.log("trailer link", trailerLink);
 	return (
@@ -69,10 +69,12 @@ const MovieDetailsContainer = ({ randomMovie }) => {
 						retribution.
 					</p> */}
 				</div>
-				<div className="movie_details__trailer_link">
-					{/* onClick={() => {
+				<div
+					className="movie_details__trailer_link"
+					onClick={() => {
 						setMovieTrailer({ type: "playTrailer", payload: randomMovie });
-					}} */}
+					}}
+				>
 					<Link to={trailerLink} className="movie_details__trailer_link__link">
 						<ButtonBase className="movie_details__trailer_link__button_ripple">
 							<svg
