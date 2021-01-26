@@ -6,6 +6,7 @@ import React, {
 	useReducer,
 } from "react";
 import { MovieTrailerContext } from "../../context/MovieTrailerContext";
+import { ButtonBase } from "@material-ui/core";
 import "./TrailerPlayer.css";
 
 const TrailerPlayer = () => {
@@ -37,6 +38,19 @@ const TrailerPlayer = () => {
 		return trailerVideo;
 	};
 
+	const openPlayer = () => {
+		player_container.current.style.height = "100vh";
+		player_container.current.style.opacity = "1";
+		iframe_container.current.style.height = "506.25px";
+		setIframeBodyHeight("506.25");
+	};
+
+	const closePlayer = () => {
+		player_container.current.style.opacity = "0";
+		iframe_container.current.style.height = "0";
+		setIframeBodyHeight("0");
+	};
+
 	useEffect(() => {
 		if (movieTrailer.movie !== "") {
 			const video = filterTrailer();
@@ -44,14 +58,9 @@ const TrailerPlayer = () => {
 			setTrailer(video);
 		}
 		if (movieTrailer.isOpen === true) {
-			player_container.current.style.height = "100vh";
-			player_container.current.style.opacity = "1";
-			iframe_container.current.style.height = "506.25px";
-			setIframeBodyHeight("506.25");
+			openPlayer();
 		} else {
-			player_container.current.style.opacity = "0";
-			iframe_container.current.style.height = "0";
-			setIframeBodyHeight("0");
+			closePlayer();
 		}
 
 		console.log(trailerPlayer_closeButton);
@@ -76,6 +85,25 @@ const TrailerPlayer = () => {
 	return (
 		<div className="trailer_player" ref={player_container}>
 			<div className="trailer_player__overlay"></div>
+			<header className="trailer_player__header">
+				<div className="trailer_player__header__title">
+					<h2 className="trailer_player__header__title__content">
+						{trailerTitle}
+					</h2>
+				</div>
+				<div
+					className="trailer_player__close_button"
+					ref={trailerPlayer_closeButton}
+				>
+					<ButtonBase className="trailer_player__close_button__ripple_effect">
+						<div className="trailer_player__close_button__lines">
+							<span className="trailer_player__close_button__line_1 trailer_player__close_button_line"></span>
+							<span className="trailer_player__close_button__line_2 trailer_player__close_button_line"></span>
+						</div>
+					</ButtonBase>
+				</div>
+			</header>
+
 			<div className="trailer_player__iframe_container" ref={iframe_container}>
 				<iframe
 					className="trailer_player__iframe"
@@ -86,13 +114,6 @@ const TrailerPlayer = () => {
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 					allowFullScreen
 				></iframe>
-			</div>
-			<div
-				className="trailer_player__close_button"
-				ref={trailerPlayer_closeButton}
-			>
-				<span className="trailer_player__close_button__line_1 trailer_player__close_button_line"></span>
-				<span className="trailer_player__close_button__line_2 trailer_player__close_button_line"></span>
 			</div>
 		</div>
 	);

@@ -39,7 +39,7 @@
 
 .header_navbar__left {
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 }
 
 .navlinks {
@@ -48,9 +48,10 @@
 }
 
 .navlinks__link {
-	font-family: montserrat-medium !important;
+	font-family: montserrat-regular !important;
 	margin-right: 25px;
-	font-weight: 500;
+	margin-bottom: 5px;
+	/* font-weight: 400; */
 	font-size: 16px;
 	letter-spacing: 0.1em;
 }
@@ -64,6 +65,8 @@
 	display: flex;
 	position: relative;
 	justify-self: end;
+	font-size: 16px;
+	/* font-family: montserrat-regular !important; */
 	align-items: center;
 	overflow: hidden;
 }
@@ -131,7 +134,8 @@
 
 .header_navbar__login {
 	color: white;
-	font-family: montserrat-medium;
+	font-family: montserrat-regular !important;
+	font-size: 16px;
 }
 
 .search_input__placeholder_1 {

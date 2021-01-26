@@ -32,3 +32,23 @@
 	font-family: poppins-medium;
 	src: url(./poppins/Poppins-Medium.ttf);
 }
+
+@font-face {
+	font-family: kanit-light;
+	src: url(./kanit/Kanit-Light.ttf);
+}
+
+@font-face {
+	font-family: kanit-semibold;
+	src: url(./kanit/Kanit-SemiBold.ttf);
+}
+
+@font-face {
+	font-family: kanit-regular;
+	src: url(./kanit/Kanit-Regular.ttf);
+}
+
+@font-face {
+	font-family: kanit-medium;
+	src: url(./kanit/Kanit-Medium.ttf);
+}

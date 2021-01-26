@@ -1,14 +1,13 @@
 import React, { useContext, useReducer } from "react";
 import { Link } from "react-router-dom";
-import { TrailerPlayerContext, reducer } from "../TrailerPlayerPopUpContext";
 import SearchInput from "./SearchInput";
 import "./Header.css";
 
 const Header = () => {
 	return (
-		<div className="header_navbar">
+		<header className="header_navbar">
 			<div className="header_navbar__container">
-				<div className="header_navbar__left">
+				<nav className="header_navbar__left">
 					<div className="header_navbar__logo">
 						<Link className="logo__link" to="/">
 							Playit
@@ -33,13 +32,13 @@ const Header = () => {
 							</li>
 						</ul>
 					</div>
-				</div>
-				<div className="header_navbar__right">
+				</nav>
+				<nav className="header_navbar__right">
 					<SearchInput />
 					<div className="header_navbar__login">Log In</div>
-				</div>
+				</nav>
 			</div>
-		</div>
+		</header>
 	);
 };
 

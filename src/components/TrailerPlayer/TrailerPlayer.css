@@ -10,7 +10,7 @@
 	visibility: visible;
 	overflow: hidden;
 	opacity: 0;
-	transition: opacity 0.5s;
+	transition: opacity 0.5s ease-in-out;
 }
 
 .trailer_player__overlay {
@@ -19,9 +19,73 @@
 	background-color: #000000;
 	position: absolute;
 	z-index: -1;
-	opacity: 0.7;
+	opacity: 0.8;
 }
 
+.trailer_player__header {
+	width: 100%;
+	margin-top: 25px;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.trailer_player__header__title {
+	color: white;
+	letter-spacing: 0.01em;
+	font-family: kanit-light !important;
+	font-weight: 300;
+	font-size: 1em;
+	margin-left: 2.5%;
+}
+
+.trailer_player__close_button {
+	width: 30px;
+	height: 30px;
+	/* background: orange; */
+	position: relative;
+	/* top: 0;
+	right: 0;  */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 2.5%;
+}
+
+.trailer_player__close_button__ripple_effect {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+}
+
+.trailer_player__close_button__lines {
+	width: 100%;
+	height: 100%;
+	margin-top: 20px;
+	border-radius: 50%;
+}
+
+.trailer_player__close_button_line {
+	width: 20px;
+	height: 2px;
+	background: white;
+	position: absolute;
+	border-radius: 15px;
+}
+
+.trailer_player__close_button__line_1 {
+	transform: rotate(-45deg);
+	transition: all 0.2s ease;
+}
+
+.trailer_player__close_button__line_2 {
+	transform: rotate(45deg);
+	transition: all 0.2s ease;
+}
 .trailer_player__iframe_container {
 	width: 900px;
 	height: 506.25px;
@@ -35,32 +99,10 @@
 	overflow: hidden;
 }
 
-.trailer_player__close_button {
-	margin-top: 30px;
-	margin-right: 20px;
-	width: 30px;
-	height: 30px;
-	/* background: orange; */
-	position: absolute;
-	top: 0;
-	right: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.trailer_player__close_button:hover .trailer_player__close_button__line_1 {
+	background-color: rgb(255, 89, 89);
 }
 
-.trailer_player__close_button_line {
-	width: 20px;
-	height: 2px;
-	background: white;
-	position: absolute;
-	border-radius: 15px;
-}
-
-.trailer_player__close_button__line_1 {
-	transform: rotate(45deg);
-}
-
-.trailer_player__close_button__line_2 {
-	transform: rotate(-45deg);
+.trailer_player__close_button:hover .trailer_player__close_button__line_2 {
+	background-color: rgb(255, 89, 89);
 }

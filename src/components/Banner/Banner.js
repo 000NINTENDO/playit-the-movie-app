@@ -56,7 +56,7 @@ const Banner = () => {
 	console.log("isLoading", isLoading);
 
 	useEffect(() => {
-		const randomPageNumber = randomPagePicker(5);
+		const randomPageNumber = randomPagePicker(3);
 		console.log("randomPageNumber", randomPageNumber);
 
 		const fetchTopTatedMovies = async () => {
