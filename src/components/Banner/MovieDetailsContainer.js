@@ -21,6 +21,7 @@ const MovieDetailsContainer = ({ randomMovie }) => {
 		release_date,
 	} = randomMovie;
 	const { setMovieTrailer } = useContext(MovieTrailerContext);
+	const movie_link = `/movies/${id}`;
 
 	// const [trailerLink, setTrailerLink] = useState("");
 	const history = useHistory();
@@ -44,7 +45,7 @@ const MovieDetailsContainer = ({ randomMovie }) => {
 	return (
 		<>
 			<div className="banner_movie_details_container">
-				<Link to="" className="movie_details__movie_link">
+				<Link to={movie_link} className="movie_details__movie_link">
 					{/* <h1 className="movie_details__movie_title">X MEN: The Appocalips</h1> */}
 					<h1 className="movie_details__movie_title">{title}</h1>
 				</Link>
