@@ -114,6 +114,13 @@ const Banner = () => {
 	return (
 		<>
 			<div className="banner_container">
+				<div className="banner_movie_details">
+					{isLoading === false ? (
+						<MovieDetailsContainer randomMovie={randomMovie} />
+					) : (
+						"Loading.."
+					)}
+				</div>
 				{isLoading === false ? (
 					<div className="banner_image">
 						<img
@@ -134,13 +141,14 @@ const Banner = () => {
 				</div> */}
 				<div className="banner_shadow_layer_1"></div>
 				<div className="banner_shadow_layer_2"></div>
-				<div className="banner_movie_details_container"></div>
 			</div>
+
 			{isLoading === false ? (
 				<MovieDetailsContainer randomMovie={randomMovie} />
 			) : (
 				"Loading.."
 			)}
+
 			{/* <BottomEllipse /> */}
 		</>
 	);

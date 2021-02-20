@@ -6,7 +6,6 @@ const RatingPercentages = ({ rating }) => {
 	const maxValue = 10;
 	const currentValue = rating;
 	const currentProgress = Math.round((currentValue * 100) / maxValue);
-	// console.log("currentProgress: ", currentProgress);
 
 	return (
 		<div className="progress_bar">
