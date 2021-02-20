@@ -1,24 +1,25 @@
 import React from "react";
-import HomePage from "./pages/HomePage";
-import MoviePage from "./pages/movie_page/MoviePage";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import { createBrowserHistory } from "history";
-
-const history = createBrowserHistory();
+import Header from "./components/header/Header";
+import Banner from "./components/Banner/Banner";
+import TrailerPlayer from "./components/TrailerPlayer/TrailerPlayer";
+import MovieSection from "./components/MovieSection/MovieSection";
+import {
+	MovieTrailerContext,
+	movie_trailer,
+	MovieTrailerProvider,
+} from "./context/MovieTrailerContext";
+import { Route, useHistory } from "react-router-dom";
 
 function App() {
+	console.log("App component History ", useHistory());
 	return (
 		<div className="App">
-			<BrowserRouter>
-				<Switch>
-					<Route exact path="/">
-						<HomePage />
-					</Route>
-					<Route path="/movies/:movie_id">
-						<MoviePage />
-					</Route>
-				</Switch>
-			</BrowserRouter>
+			<MovieTrailerProvider>
+				<Header />
+				<Banner />
+				<MovieSection />
+				<TrailerPlayer />
+			</MovieTrailerProvider>
 		</div>
 	);
 }

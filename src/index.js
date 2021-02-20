@@ -1,13 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import "./index.css";
-import store from "./store/store";
-import { Provider } from "react-redux";
 import App from "./App";
 
 ReactDOM.render(
-	<Provider store={store}>
-		<App />
-	</Provider>,
+	<Router>
+		<Route exact path="/">
+			<App />
+		</Route>
+	</Router>,
 	document.getElementById("root")
 );
