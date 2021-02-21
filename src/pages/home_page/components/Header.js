@@ -1,7 +1,7 @@
 import React, { useContext, useReducer } from "react";
 import { Link } from "react-router-dom";
-import SearchInput from "./SearchInput";
 import "./Header.css";
+import SearchInput from "./SearchInput";
 
 const Header = () => {
 	return (

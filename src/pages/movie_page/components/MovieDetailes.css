@@ -1,0 +1,28 @@
+.movie_page_banner_movie_details_container {
+	width: 80%;
+	position: static;
+	margin-left: 40px;
+}
+
+.movie_page_banner_movie_details_container_overview__content {
+	width: 100%;
+	max-width: 100%;
+	color: white;
+	font-family: montserrat-regular;
+	font-weight: 400;
+}
+
+.movie_page_banner_movie_details_container__movie_rating_year_duration {
+	display: flex;
+}
+
+.movie_page_banner_movie_details_container__movie_rating_year_duration__duration_year {
+	margin-left: 30px;
+	align-self: flex-end;
+	margin-bottom: 12px;
+}
+
+.movie_page_movie_details_container__title {
+	font-family: montserrat-bold;
+	font-weight: 700;
+}

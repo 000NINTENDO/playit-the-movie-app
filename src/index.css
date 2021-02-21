@@ -31,6 +31,10 @@ body::-webkit-scrollbar-thumb {
 	background-color: rgba(0, 0, 0, 0.4);
 	border-radius: 15px;
 }
+
+body::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(0, 0, 0, 0.6);
+}
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 		monospace;

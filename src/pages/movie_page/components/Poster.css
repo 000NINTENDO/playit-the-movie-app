@@ -1,0 +1,16 @@
+.movie_page_poster {
+	width: 300px;
+	height: 450px;
+	border-radius: 10px;
+	overflow: hidden;
+	z-index: 2;
+	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.movie_page_poster__poster_image {
+	width: 300px;
+}
+
+.movie_page_poster__poster_image_image {
+	width: 100%;
+}

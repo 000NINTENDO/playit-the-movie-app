@@ -1,5 +1,3 @@
-@import "../../fonts/fonts.css";
-
 .banner_movie_details_container {
 	width: 50%;
 	margin-left: auto;
@@ -24,6 +22,11 @@
 	font-family: montserrat-semibold;
 	text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
 	z-index: 999;
+	transition: all 0.2s ease-in-out;
+}
+
+.movie_details__movie_title:hover {
+	color: rgb(194, 194, 194);
 }
 
 .movie_details__duration_year {

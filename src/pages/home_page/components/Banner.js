@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
-import bannerImage from "../../images/bd-3.jpg";
 import MovieDetailsContainer from "./MovieDetailsContainer";
-import { MovieTrailerProvider } from "../../context/MovieTrailerContext";
 import "./Banner.css";
 
 // READ ME if stuck !!!

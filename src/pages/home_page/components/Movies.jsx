@@ -1,5 +1,5 @@
 import React from "react";
-import BottomBorder from "../bottomBorder/BottomBorder";
+import BottomBorder from "./BottomBorder";
 import NowPlayingMovies from "./NowPlayingMovies";
 import PopularMovies from "./PopularMovies";
 import TopRatedMovies from "./TopRatedMovies";

@@ -1,18 +1,16 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchTopRatedMovies } from "../../thunk_functions/fetchMovies";
-import MovieSection from "../MovieSection/MovieSection";
-import MovieCard from "../MovieSection/MovieCard";
+import { fetchPopularMovies } from "../../../thunk_functions/fetchMovies";
+import MovieSection from "./MovieSection";
+import MovieCard from "./MovieCard";
 
-const TopRatedMovies = () => {
+const PopularMovies = () => {
 	const dispatch = useDispatch();
 	const movies_status = useSelector((state) => {
-		return state.trending_movies.status;
+		return state.popular_movies.status;
 	});
-	const allIds = useSelector((state) => state.trending_movies.movies.allIds);
-	const moviesByIds = useSelector(
-		(state) => state.trending_movies.movies.byIds
-	);
+	const allIds = useSelector((state) => state.popular_movies.movies.allIds);
+	const moviesByIds = useSelector((state) => state.popular_movies.movies.byIds);
 	let all_movies;
 	let movieList;
 
@@ -29,16 +27,16 @@ const TopRatedMovies = () => {
 	console.log("trending movies", all_movies);
 
 	useEffect(() => {
-		dispatch(fetchTopRatedMovies(1));
-	}, [fetchTopRatedMovies]);
+		dispatch(fetchPopularMovies(1));
+	}, []);
 
 	return (
 		<>
-			<div className="top_rated_movies">
+			<div className="popular_movies">
 				<MovieSection
-					title={"Trending Now"}
+					title={"Popular Movies"}
 					movies={movieList}
-					class_name={"top_rated_movies"}
+					class_name={"popular_movies"}
 					movies_status={movies_status}
 				/>
 			</div>
@@ -46,4 +44,4 @@ const TopRatedMovies = () => {
 	);
 };
 
-export default TopRatedMovies;
+export default PopularMovies;

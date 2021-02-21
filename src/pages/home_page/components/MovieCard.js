@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef, useContext } from "react";
-import posterImg from "../../images/postr-3.jpg";
 import RatingPercentages from "./RatingPercentages";
-import { MovieTrailerContext } from "../../context/MovieTrailerContext";
+import { MovieTrailerContext } from "../../../context/MovieTrailerContext";
 import "./MovieCard.css";
 import { Link } from "react-router-dom";
 
@@ -19,7 +18,7 @@ const MovieCard = ({ movie }) => {
 	const release_date = new Date(movie.release_date);
 	const releaseDate = release_date.toDateString().slice(4);
 	const posterImage = `https://image.tmdb.org/t/p/w500/${movie.poster_path}`;
-	const movie_link = `/movies/${movie.id}`;
+	const movie_link = `/movie/${movie.id}`;
 
 	useEffect(() => {
 		const fetchMovieVideos = async () => {

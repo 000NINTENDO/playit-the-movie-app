@@ -5,7 +5,7 @@ import React, {
 	useContext,
 	useReducer,
 } from "react";
-import { MovieTrailerContext } from "../../context/MovieTrailerContext";
+import { MovieTrailerContext } from "../../../context/MovieTrailerContext";
 import { ButtonBase } from "@material-ui/core";
 import "./TrailerPlayer.css";
 
@@ -17,6 +17,7 @@ const TrailerPlayer = () => {
 	const player_container = useRef();
 	const iframe_container = useRef();
 	const iframe_body = useRef();
+	const player__header = useRef();
 	let trailerTitle;
 	let trailerLink;
 	if (trailer !== undefined) {
@@ -42,12 +43,14 @@ const TrailerPlayer = () => {
 		player_container.current.style.height = "100vh";
 		player_container.current.style.opacity = "1";
 		iframe_container.current.style.height = "506.25px";
+		player__header.current.style.height = "";
 		setIframeBodyHeight("506.25");
 	};
 
 	const closePlayer = () => {
 		player_container.current.style.opacity = "0";
 		iframe_container.current.style.height = "0";
+		player__header.current.style.height = "0";
 		setIframeBodyHeight("0");
 	};
 
@@ -85,7 +88,7 @@ const TrailerPlayer = () => {
 	return (
 		<div className="trailer_player" ref={player_container}>
 			<div className="trailer_player__overlay"></div>
-			<header className="trailer_player__header">
+			<header ref={player__header} className="trailer_player__header">
 				<div className="trailer_player__header__title">
 					<h2 className="trailer_player__header__title__content">
 						{trailerTitle}

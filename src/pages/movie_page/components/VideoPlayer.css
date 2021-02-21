@@ -1,0 +1,36 @@
+.movie_page_video_player {
+	width: 100%;
+	/* height: 100vh; */
+	height: 0vh;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.movie_page_video_player__header {
+	margin-top: 30px;
+}
+
+.movie_page_video_player__iframe_container {
+	width: 900px;
+	/* height: 506.25px; */
+	height: 0px;
+	/* width: 1100px;
+	height: 700px; */
+	box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.5);
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	z-index: 1;
+	background-color: white;
+}
+
+.movie_page_video_player__iframe {
+	margin-top: 0px;
+}

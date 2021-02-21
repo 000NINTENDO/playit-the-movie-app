@@ -1,14 +1,9 @@
-import React, { useState, useEffect, useReducer, useContext } from "react";
+import React, { useContext } from "react";
 import MovieRatingIndicator from "./MovieRatingIndicators";
 import ButtonBase from "@material-ui/core/ButtonBase";
-import {
-	MovieTrailerContext,
-	movie_trailer,
-	movieTrailerReducer,
-} from "../../context/MovieTrailerContext";
-import { Link, useHistory } from "react-router-dom";
+import { MovieTrailerContext } from "../../../context/MovieTrailerContext";
+import { Link } from "react-router-dom";
 import "./MovieDetailsContainer.css";
-import TrailerPlayer from "../TrailerPlayer/TrailerPlayer";
 
 const MovieDetailsContainer = ({ randomMovie }) => {
 	const {
@@ -21,13 +16,12 @@ const MovieDetailsContainer = ({ randomMovie }) => {
 		release_date,
 	} = randomMovie;
 	const { setMovieTrailer } = useContext(MovieTrailerContext);
-	const movie_link = `/movies/${id}`;
+	const movie_link = `/movie/${id}`;
 
 	// const [trailerLink, setTrailerLink] = useState("");
-	const history = useHistory();
 	const trailerLink = `/#play?${id}`;
-	console.log("history object", history);
-	console.log("im added");
+	// console.log("history object", history);
+	// console.log("im added");
 
 	// console.log("movie details container im rendered");
 
@@ -41,7 +35,7 @@ const MovieDetailsContainer = ({ randomMovie }) => {
 	const releadeDate = new Date(release_date);
 	const releaseYear = releadeDate.getFullYear();
 
-	console.log("trailer link", trailerLink);
+	// console.log("trailer link", trailerLink);
 	return (
 		<>
 			<div className="banner_movie_details_container">
