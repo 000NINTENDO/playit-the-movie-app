@@ -16,7 +16,7 @@ function* fetchMovieSaga(action) {
 		console.log(movie);
 		yield put({ type: type.movie_fetched, payload: movie });
 	} catch (err) {
-		yield put({ type: type.movie_fetching_error, payload: err });
+		yield put({ type: type.movie_fetching_error, error: err });
 	}
 }
 

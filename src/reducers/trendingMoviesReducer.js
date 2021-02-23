@@ -8,12 +8,12 @@ const initialState = {
 	},
 };
 
-const byId = (movies) => {
-	const all_movies = movies.map((movie) => {
-		return movie;
-	});
-	return {};
-};
+// const byId = (movies) => {
+// 	const all_movies = movies.map((movie) => {
+// 		return movie;
+// 	});
+// 	return {};
+// };
 
 // const byIds = (movies) => {
 //     let moviesById =

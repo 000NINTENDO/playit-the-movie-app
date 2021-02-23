@@ -14,7 +14,7 @@ const Banner = () => {
 	const [isMoviesReceived, setIsMoviesReceived] = useState(false);
 	const [randomMovie, setRandomMovie] = useState({});
 	const [randomMovieId, setRandomMovieId] = useState();
-	const [isMovieIdReceived, setIsMovieIdReceived] = useState(false);
+	// const [isMovieIdReceived, setIsMovieIdReceived] = useState(false);
 	const [isLoading, setIsLoading] = useState(true);
 	let backDropImage;
 	let backDropImage_url;

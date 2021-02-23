@@ -27,8 +27,9 @@ const MovieDetailes = ({ movie }) => {
 	let video_key;
 	videos.results.map((video) => {
 		if (video.type === "Trailer") {
-			video_key = video.key;
+			return (video_key = video.key);
 		}
+		return;
 	});
 
 	console.log("movie key", video_key);
