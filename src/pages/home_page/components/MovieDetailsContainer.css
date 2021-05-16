@@ -19,7 +19,7 @@
 	width: 80%;
 	letter-spacing: 0.05em;
 	line-height: 1.5;
-	font-family: montserrat-semibold;
+	font-family: "montserrat-semibold", Arial, Helvetica, sans-serif;
 	text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
 	z-index: 999;
 	transition: all 0.2s ease-in-out;
@@ -33,7 +33,7 @@
 	display: flex;
 	align-items: center;
 	margin-top: 21px;
-	font-family: montserrat-regular;
+	font-family: "montserrat-regular", Arial, Helvetica, sans-serif;
 	letter-spacing: 0.1em;
 	font-size: 14px;
 }
@@ -51,7 +51,7 @@
 }
 
 .overview__title {
-	font-family: montserrat-semibold;
+	font-family: "montserrat-semibold", Arial, Helvetica, sans-serif;
 	font-weight: 500;
 	font-size: 14px;
 }
@@ -63,7 +63,7 @@
 	/* white-space: ; */
 	text-overflow: ellipsis;
 	word-wrap: normal;
-	font-family: montserrat-light;
+	font-family: "montserrat-light", Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	line-height: 1.6;
 	margin-top: 12px;

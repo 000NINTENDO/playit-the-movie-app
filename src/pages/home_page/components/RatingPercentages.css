@@ -41,7 +41,7 @@
 
 .currentProgress__text {
 	margin-left: 2px;
-	font-family: montserrat-bold;
+	font-family: "montserrat-bold", Arial, Helvetica, sans-serif;
 	letter-spacing: 0.1em;
 	font-weight: 700;
 	transition: all 0.5s;
@@ -53,6 +53,6 @@
 }
 
 .current_progress__percent_sign {
-	font-family: montserrat-medium;
+	font-family: "montserrat-medium", Arial, Helvetica, sans-serif;
 	font-weight: 500;
 }

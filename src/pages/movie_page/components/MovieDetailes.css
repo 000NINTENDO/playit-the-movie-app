@@ -8,7 +8,7 @@
 	width: 100%;
 	max-width: 100%;
 	color: white;
-	font-family: montserrat-regular;
+	font-family: "montserrat-regular", Arial, Helvetica, sans-serif;
 	font-weight: 400;
 }
 
@@ -23,6 +23,6 @@
 }
 
 .movie_page_movie_details_container__title {
-	font-family: montserrat-bold;
+	font-family: "montserrat-bold", Arial, Helvetica, sans-serif;
 	font-weight: 700;
 }

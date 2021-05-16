@@ -1,54 +1,98 @@
 @font-face {
-	font-family: racing-sans-one;
-	src: url(./racing-sans-one/RacingSansOne-Regular.ttf);
+	font-family: "racing-sans-one";
+	src: url("racing-sans-one/RacingSansOne-Regular.ttf");
+	src: url("RacingSansOne-Regular.eot?#iefix") format("embedded-opentype"),
+		url("RacingSansOne-Regular.woff2") format("woff2"),
+		url("RacingSansOne-Regular.woff") format("woff"),
+		url("RacingSansOne-Regular.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: montserrat-medium;
-	src: url(./montserrat/Montserrat-Medium.ttf);
+	font-family: "montserrat-medium";
+	src: url("./Montserrat-Medium.eot");
+	src: url("./Montserrat-Medium.eot?#iefix") format("embedded-opentype"),
+		url("./Montserrat-Medium.woff2") format("woff2"),
+		url("./Montserrat-Medium.woff") format("woff"),
+		url("./Montserrat-Medium.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: montserrat-regular;
-	src: url(./montserrat/Montserrat-Regular.ttf);
+	font-family: "montserrat-regular";
+	src: url("./Montserrat-Regular.eot");
+	src: url("./Montserrat-Regular.eot?#iefix") format("embedded-opentype"),
+		url("./Montserrat-Regular.woff2") format("woff2"),
+		url("./Montserrat-Regular.woff") format("woff"),
+		url("./Montserrat-Regular.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: montserrat-bold;
-	src: url(./montserrat/Montserrat-Bold.ttf);
+	font-family: "montserrat-bold";
+	src: url("./Montserrat-Bold.eot");
+	src: url("./Montserrat-Bold.eot?#iefix") format("embedded-opentype"),
+		url("./Montserrat-Bold.woff2") format("woff2"),
+		url("./Montserrat-Bold.woff") format("woff"),
+		url("./Montserrat-Bold.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: montserrat-semibold;
-	src: url(./montserrat/Montserrat-SemiBold.ttf);
+	font-family: "montserrat-semibold";
+	src: url("./Kanit-SemiBold.eot");
+	src: url("./Kanit-SemiBold.eot?#iefix") format("embedded-opentype"),
+		url("./Kanit-SemiBold.woff2") format("woff2"),
+		url("./Kanit-SemiBold.woff") format("woff"),
+		url("./Kanit-SemiBold.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: montserrat-light;
-	src: url(./montserrat/Montserrat-Light.ttf);
+	font-family: "montserrat-light";
+	src: url("./Montserrat-Light.eot");
+	src: url("./Montserrat-Light.eot?#iefix") format("embedded-opentype"),
+		url("./Montserrat-Light.woff2") format("woff2"),
+		url("./Montserrat-Light.woff") format("woff"),
+		url("./Montserrat-Light.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: poppins-medium;
-	src: url(./poppins/Poppins-Medium.ttf);
+	font-family: "poppins-medium";
+	src: url("./Poppins-Medium.eot?#iefix") format("embedded-opentype"),
+		url("./Poppins-Medium.woff2") format("woff2"),
+		url("./Poppins-Medium.woff") format("woff"),
+		url("./Poppins-Medium.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: kanit-light;
-	src: url(./kanit/Kanit-Light.ttf);
+	font-family: "kanit-light";
+	src: url("./Kanit-Light.eot");
+	src: url("./Kanit-Light.eot?#iefix") format("embedded-opentype"),
+		url("./Kanit-Light.woff2") format("woff2"),
+		url("./Kanit-Light.woff") format("woff"),
+		url("./Kanit-Light.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: kanit-semibold;
-	src: url(./kanit/Kanit-SemiBold.ttf);
+	font-family: "kanit-semibold";
+	src: url("./Montserrat-Bold.eot");
+	src: url("./Montserrat-Bold.eot?#iefix") format("embedded-opentype"),
+		url("./Montserrat-Bold.woff2") format("woff2"),
+		url("./Montserrat-Bold.woff") format("woff"),
+		url("./Montserrat-Bold.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: kanit-regular;
-	src: url(./kanit/Kanit-Regular.ttf);
+	font-family: "kanit-regular";
+	src: url("./Kanit-Regular.eot");
+	src: url("./Kanit-Regular.eot?#iefix") format("embedded-opentype"),
+		url("./Kanit-Regular.woff2") format("woff2"),
+		url("./Kanit-Regular.woff") format("woff"),
+		url("./Kanit-Regular.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: kanit-medium;
-	src: url(./kanit/Kanit-Medium.ttf);
+	font-family: "kanit-medium";
+
+	src: url("./Kanit-Medium.eot");
+	src: url("./Kanit-Medium.eot?#iefix") format("embedded-opentype"),
+		url("./Kanit-Medium.woff2") format("woff2"),
+		url("./Kanit-Medium.woff") format("woff"),
+		url("./Kanit-Medium.ttf") format("truetype");
 }
