@@ -1,10 +1,11 @@
 @font-face {
-  font-family: "racing-sans-one";
-  src: url("./RacingSansOne-Regular.eot");
-  src: url("./RacingSansOne-Regular.eot?#iefix") format("embedded-opentype"),
+  font-family: racing-sans-one;
+  src: url("./racing-sans-one/RacingSansOne-Regular.ttf");
+  font-weight: 400;
+  /* src: url("./RacingSansOne-Regular.eot?#iefix") format("embedded-opentype"),
     url("./RacingSansOne-Regular.woff2") format("woff2"),
     url("./RacingSansOne-Regular.woff") format("woff"),
-    url("./RacingSansOne-Regular.ttf") format("truetype");
+    url("./RacingSansOne-Regular.ttf") format("truetype"); */
 }
 
 @font-face {
