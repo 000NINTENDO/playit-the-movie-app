@@ -6,22 +6,22 @@ import { MovieTrailerProvider } from "./context/MovieTrailerContext";
 import "./fonts/fonts.css";
 
 function App() {
-	return (
-		<div className="App">
-			<MovieTrailerProvider>
-				<BrowserRouter>
-					<Switch>
-						<Route exact path="/">
-							<HomePage />
-						</Route>
-						<Route path="/movie/:movie_id">
-							<MoviePage />
-						</Route>
-					</Switch>
-				</BrowserRouter>
-			</MovieTrailerProvider>
-		</div>
-	);
+  return (
+    <div className="App">
+      <MovieTrailerProvider>
+        <BrowserRouter>
+          <Switch>
+            <Route exact path="/">
+              <HomePage />
+            </Route>
+            <Route path="/movie/:movie_id">
+              <MoviePage />
+            </Route>
+          </Switch>
+        </BrowserRouter>
+      </MovieTrailerProvider>
+    </div>
+  );
 }
 
 export default App;
