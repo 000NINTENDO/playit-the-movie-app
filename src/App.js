@@ -3,7 +3,7 @@ import HomePage from "./pages/home_page/HomePage";
 import MoviePage from "./pages/movie_page/MoviePage";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { MovieTrailerProvider } from "./context/MovieTrailerContext";
-import "./fonts/fonts.css";
+import "./App.css";
 
 function App() {
 	return (

@@ -1,0 +1,113 @@
+/* @font-face {
+	font-family: "racing-sans-one";
+	src: url("./fonts/RacingSansOne-Regular.eot");
+	src: url("RacingSansOne-Regular.eot?#iefix") format("embedded-opentype"),
+		url("RacingSansOne-Regular.woff2") format("woff2"),
+		url("RacingSansOne-Regular.woff") format("woff"),
+		url("RacingSansOne-Regular.ttf") format("truetype");
+} */
+
+@font-face {
+	font-family: "racing_sans_oneregular";
+	src: url("./fonts/racingsansone-regular-webfont.eot");
+	src: url("./fonts/racingsansone-regular-webfont.eot?#iefix")
+			format("embedded-opentype"),
+		url("./fonts/racingsansone-regular-webfont.woff2") format("woff2"),
+		url("./fonts/racingsansone-regular-webfont.woff") format("woff"),
+		url("./fonts/racingsansone-regular-webfont.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* @font-face {
+    font-family: 'racing_sans_oneregular';
+    src: url('./fonts/racingsansone-regular-webfont.eot');
+    src: url('racingsansone-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('racingsansone-regular-webfont.woff2') format('woff2'),
+         url('racingsansone-regular-webfont.woff') format('woff'),
+         url('racingsansone-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+	font-family: "montserrat-regular";
+	src: url("./fonts/Montserrat-Regular.eot");
+	src: url("./fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"),
+		url("./fonts/Montserrat-Regular.woff2") format("woff2"),
+		url("./fonts/Montserrat-Regular.woff") format("woff"),
+		url("./fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "montserrat-bold";
+	src: url("./fonts/Montserrat-Bold.eot");
+	src: url("./fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"),
+		url("./fonts/Montserrat-Bold.woff2") format("woff2"),
+		url("./fonts/Montserrat-Bold.woff") format("woff"),
+		url("./fonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "montserrat-semibold";
+	src: url("./fonts/Kanit-SemiBold.eot");
+	src: url("./fonts/Kanit-SemiBold.eot?#iefix") format("embedded-opentype"),
+		url("./fonts/Kanit-SemiBold.woff2") format("woff2"),
+		url("./fonts/Kanit-SemiBold.woff") format("woff"),
+		url("./fonts/Kanit-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "montserrat-light";
+	src: url("./fonts/Montserrat-Light.eot");
+	src: url("./fonts/Montserrat-Light.eot?#iefix") format("embedded-opentype"),
+		url("./fonts/Montserrat-Light.woff2") format("woff2"),
+		url("./fonts/Montserrat-Light.woff") format("woff"),
+		url("./fonts/Montserrat-Light.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "poppins-medium";
+	src: url("./fonts/Poppins-Medium.eot?#iefix") format("embedded-opentype"),
+		url("./fonts/Poppins-Medium.woff2") format("woff2"),
+		url("./fonts/Poppins-Medium.woff") format("woff"),
+		url("./fonts/Poppins-Medium.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "kanit-light";
+	src: url("./fonts/Kanit-Light.eot");
+	src: url("./fonts/Kanit-Light.eot?#iefix") format("embedded-opentype"),
+		url("./fonts/Kanit-Light.woff2") format("woff2"),
+		url("./fonts/Kanit-Light.woff") format("woff"),
+		url("./fonts/Kanit-Light.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "kanit-semibold";
+	src: url("./fonts/Montserrat-Bold.eot");
+	src: url("./fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"),
+		url("./fonts/Montserrat-Bold.woff2") format("woff2"),
+		url("./fonts/Montserrat-Bold.woff") format("woff"),
+		url("./fonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "kanit-regular";
+	src: url("./fonts/Kanit-Regular.eot");
+	src: url("./fonts/Kanit-Regular.eot?#iefix") format("embedded-opentype"),
+		url("./fonts/Kanit-Regular.woff2") format("woff2"),
+		url("./fonts/Kanit-Regular.woff") format("woff"),
+		url("./fonts/Kanit-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "kanit-medium";
+
+	src: url("./fonts/Kanit-Medium.eot");
+	src: url("./fonts/Kanit-Medium.eot?#iefix") format("embedded-opentype"),
+		url("./fonts/Kanit-Medium.woff2") format("woff2"),
+		url("./fonts/Kanit-Medium.woff") format("woff"),
+		url("./fonts/Kanit-Medium.ttf") format("truetype");
+} */
