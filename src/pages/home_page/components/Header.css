@@ -1,12 +1,5 @@
 @import "../../../fonts/fonts.css";
-@font-face {
-  font-family: "Racing";
-  src: url(../../../fonts/RacingSansOne-Regular.woff2);
-  /* src: url("./RacingSansOne-Regular.eot?#iefix") format("embedded-opentype"),
-    url("./RacingSansOne-Regular.woff2") format("woff2"),
-    url("./RacingSansOne-Regular.woff") format("woff"),
-    url("./RacingSansOne-Regular.ttf") format("truetype"); */
-}
+
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +21,7 @@
 }
 
 .logo__link {
-  font-family: "racing sans one";
+  font-family: "racing-sans-one", Arial, Helvetica, sans-serif !important;
   font-size: 34px;
   text-decoration: none;
   color: white;
